@@ -149,7 +149,7 @@ void DRAW_SPREAD_PARTICLE::Refresh_vboColor__SpreadParticle()
 {
 	for(int i = 0; i < NUM_CLOUDS; i++){
 		ofColor col = Gui_Global->col_SpreadParticle;
-		col.a = clouds[i].get_ColAlpha();
+		col.a *= clouds[i].get_ColAlpha();
 		
 		VboSet__SpreadParticle.set_vboColor(i * 4 + 0, col);
 		VboSet__SpreadParticle.set_vboColor(i * 4 + 1, col);

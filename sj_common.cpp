@@ -138,8 +138,8 @@ void GUI_GLOBAL::setup(string GuiName, string FileName, float x, float y)
 			ofColor maxColor = ofColor(255, 255, 255, 255);
 			Group_SpreadParticle.add(col_SpreadParticle.setup("color", initColor, minColor, maxColor));
 		}
-		Group_SpreadParticle.add(SpreadParticle_Alpha_min.setup("a_min", 80, 0.0, 255));
-		Group_SpreadParticle.add(SpreadParticle_Alpha_max.setup("a_max", 200, 0.0, 255));
+		Group_SpreadParticle.add(SpreadParticle_Alpha_min.setup("a_min", 0.3, 0.0, 1.0));
+		Group_SpreadParticle.add(SpreadParticle_Alpha_max.setup("a_max", 0.8, 0.0, 1.0));
 	gui.add(&Group_SpreadParticle);
 	
 	Group_ArtSin.setup("ArtSin");

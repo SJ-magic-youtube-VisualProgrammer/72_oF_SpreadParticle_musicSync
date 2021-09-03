@@ -19,7 +19,7 @@ private:
 	ofVec2f pos;
 	ofVec2f dir;
 	ofVec2f Size;
-	int col_Alpha;
+	float col_Alpha;
 	
 	double get_Random();
 	double get_SignedRandom();
@@ -33,7 +33,7 @@ public:
 	void Proceed(float vel, float dt);
 	void Proceed_RandomAmount();
 	
-	int get_ColAlpha()	{ return col_Alpha; }
+	float get_ColAlpha()	{ return col_Alpha; }
 	
 	ofVec2f getPos_LeftLow(){
 		ofVec2f point;
